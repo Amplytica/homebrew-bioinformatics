@@ -6,6 +6,7 @@ class Ipa < Formula
 
   # Dependencies
   depends_on :python if MacOS.version <= :snow_leopard
+  depends_on "setuptools" => :python
 
   depends_on "samtools"
   depends_on "karect"
