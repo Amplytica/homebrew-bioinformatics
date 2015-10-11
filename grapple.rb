@@ -1,3 +1,5 @@
+require "fileutils"
+
 class Grapple < Formula
   desc "Genome Reference Assembly Pipeline"
   homepage "https://github.com/qsirianni/grapple"
@@ -28,8 +30,8 @@ class Grapple < Formula
     system "python", *Language::Python.setup_install_args(libexec)
 
     bin.install Dir[libexec/"bin/*"]
-    bin.env_script_all_files(libexec/"bin", :PYTHONPATH => ENV["PYTHONPATH"])
-    system "ln -s grapple.py #{bin}/grapple"
+    bin.env_script_all_files libexec/"bin", :PYTHONPATH => ENV["PYTHONPATH"]
+    ln_s "grapple.py", bin/"grapple"
   end
 
   test do
