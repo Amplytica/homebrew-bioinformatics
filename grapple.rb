@@ -3,8 +3,8 @@ require "fileutils"
 class Grapple < Formula
   desc "Genome Reference Assembly Pipeline"
   homepage "https://github.com/qsirianni/grapple"
-  url "https://github.com/qsirianni/grapple/archive/v0.2.0.tar.gz"
-  sha256 "de54bc5f2ea301dd784c767347975ccf6454f0d31f4668f326109c7104c13acc"
+  url "https://github.com/qsirianni/grapple/archive/v0.2.1.tar.gz"
+  sha256 "b4d7f7a2b35470330cc14276c56fc07ef98a3fe8946433f1bbb8ac0d982bee94"
 
   # Dependencies
   depends_on :python if MacOS.version <= :snow_leopard
