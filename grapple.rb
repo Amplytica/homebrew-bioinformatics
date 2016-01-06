@@ -4,7 +4,7 @@ class Grapple < Formula
   desc "Genome Reference Assembly Pipeline"
   homepage "https://github.com/qsirianni/grapple"
   url "https://github.com/qsirianni/grapple/archive/v0.2.2.tar.gz"
-  sha256 "9fa16b50ff1a693f0a55fb52492a63bd3581279c4707aa94a1b57bed9f4a4eb1" 
+  sha256 "9fa16b50ff1a693f0a55fb52492a63bd3581279c4707aa94a1b57bed9f4a4eb1"
 
   # Dependencies
   depends_on :python if MacOS.version <= :snow_leopard
