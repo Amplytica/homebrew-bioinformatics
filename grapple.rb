@@ -3,8 +3,8 @@ require "fileutils"
 class Grapple < Formula
   desc "Genome Reference Assembly Pipeline"
   homepage "https://github.com/qsirianni/grapple"
-  url "https://github.com/qsirianni/grapple/archive/v0.2.2.tar.gz"
-  sha256 "9fa16b50ff1a693f0a55fb52492a63bd3581279c4707aa94a1b57bed9f4a4eb1"
+  url "https://github.com/qsirianni/grapple/archive/v0.2.3.tar.gz"
+  sha256 "674dabfab944286aa371aae0c0b6d9bb9014471a56a9ce0640be0673aeaa9728"
 
   # Dependencies
   depends_on :python if MacOS.version <= :snow_leopard
@@ -16,8 +16,8 @@ class Grapple < Formula
   depends_on "bcftools"
 
   resource "psutil" do
-    url "https://pypi.python.org/packages/source/p/psutil/psutil-3.2.1.tar.gz"
-    sha256 "7f6bea8bfe2e5cfffd0f411aa316e837daadced1893b44254bb9a38a654340f7"
+    url "https://pypi.python.org/packages/source/p/psutil/psutil-3.2.2.tar.gz"
+    sha256 "f9d848e5bd475ffe7fa3ab1c20d249807e648568af64bb0058412296ec990a0c"
   end
 
   def install
